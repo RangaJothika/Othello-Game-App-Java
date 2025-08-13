@@ -1,23 +1,22 @@
-package Othello;
-
 public class Player {
+
     private String name;
     private char color;
 
     public Player(String n, char c) {
         name = n;
-        color = c;
+        color = Character.toUpperCase(c);
     }
 
     public char getColor() {
         return color;
     }
+
     public void setColor(char c) {
-       this.color=c;
+        this.color = Character.toUpperCase(c);
     }
-    public String getName(){
+
+    public String getName() {
         return name;
     }
-    
-
 }
